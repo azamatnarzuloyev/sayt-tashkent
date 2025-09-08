@@ -117,7 +117,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background with classical statue */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0" role="img" aria-label="Классическая статуя мыслителя - символ интеллектуального подхода к веб-разработке">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20"></div>
           <div className="absolute inset-0 bg-[url('/classical-statue-thinking-pose-marble-sculpture.jpg')] bg-cover bg-center opacity-30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-background/60"></div>
@@ -161,7 +161,7 @@ export default function HomePage() {
         </nav>
 
         {/* Main content */}
-        <div className="relative z-10 container mx-auto px-4 text-left max-w-4xl">
+        <header className="relative z-10 container mx-auto px-4 text-left max-w-4xl">
           <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight">
               <span className="block text-balance">РАЗРАБОТКА</span>
@@ -206,13 +206,13 @@ export default function HomePage() {
               </Button>
             </div>
           </div>
-        </div>
+        </header>
       </section>
 
-      <section className="py-20 bg-card/30" id="advantages">
+      <section className="py-20 bg-card/30" id="advantages" aria-labelledby="advantages-title">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+            <h2 id="advantages-title" className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
               ПОЧЕМУ ВЫБИРАЮТ НАШУ ВЕБ-СТУДИЮ В ТАШКЕНТЕ
             </h2>
             <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
@@ -317,9 +317,9 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20" id="services">
+      <section className="py-20" id="services" aria-labelledby="services-title">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+          <h2 id="services-title" className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
             УСЛУГИ ПО РАЗРАБОТКЕ САЙТОВ В ТАШКЕНТЕ
           </h2>
           <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
@@ -430,9 +430,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-card/30" id="portfolio">
+      <section className="py-20 bg-card/30" id="portfolio" aria-labelledby="portfolio-title">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+          <h2 id="portfolio-title" className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
             ПОРТФОЛИО НАШЕЙ ВЕБ-СТУДИИ
           </h2>
           <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">

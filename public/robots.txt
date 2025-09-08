@@ -1,0 +1,42 @@
+User-agent: *
+Allow: /
+
+# Main sitemap
+Sitemap: https://sayt-tashkent.uz/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1
+
+# Block sensitive areas (if any in future)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Allow important pages for SEO
+Allow: /
+Allow: /services/
+Allow: /portfolio/
+Allow: /contact/
+Allow: /about/
+
+# SEO optimization
+# Allow all search engines to index the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Host directive for preferred domain
+Host: https://sayt-tashkent.uz
