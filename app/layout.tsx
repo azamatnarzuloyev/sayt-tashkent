@@ -105,7 +105,7 @@ export default function RootLayout({
     "url": "https://sayt-tashkent.uz",
     "logo": "https://sayt-tashkent.uz/logo.png",
     "image": "https://sayt-tashkent.uz/og-image.jpg",
-    "telephone": "+998901234567",
+    "telephone": "+998990167647 ",
     "email": "info@sayt-tashkent.uz",
     "address": {
       "@type": "PostalAddress",

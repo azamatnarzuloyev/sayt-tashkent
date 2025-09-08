@@ -120,7 +120,7 @@ export default function HomePage() {
         {/* Background with classical statue */}
         <div className="absolute inset-0" role="img" aria-label="Классическая статуя мыслителя - символ интеллектуального подхода к веб-разработке">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20"></div>
-          <div className="absolute inset-0 bg-[url('/classical-statue-thinking-pose-marble-sculpture.jpg')] bg-cover bg-center opacity-30"></div>
+          <div className="absolute inset-0 bg-[url('/Razrabotka-sayta.jpg')] bg-cover bg-center opacity-30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-background/60"></div>
         </div>
 
@@ -159,7 +159,7 @@ export default function HomePage() {
 
             {/* Contact info - responsive */}
             <div className="hidden md:flex items-center space-x-2 lg:space-x-4 text-xs lg:text-sm">
-              <span className="hidden lg:inline text-muted-foreground">+998 90 123 45 67</span>
+              <span className="hidden lg:inline text-muted-foreground">+998 99 016 76 47 </span>
               <span className="text-muted-foreground lg:hidden">Звонить</span>
               <span className="hidden xl:inline text-muted-foreground">info@sayt-tashkent.uz</span>
             </div>
@@ -231,9 +231,9 @@ export default function HomePage() {
                   {/* Mobile contact info */}
                   <div className="pt-4 border-t border-border/50">
                     <div className="space-y-2">
-                      <a href="tel:+998901234567" className="flex items-center text-primary font-medium">
+                      <a href="tel:+998990167647 " className="flex items-center text-primary font-medium">
                         <Phone className="h-4 w-4 mr-2" />
-                        +998 90 123 45 67
+                        +998 99 016 76 47 
                       </a>
                       <a href="mailto:info@sayt-tashkent.uz" className="flex items-center text-muted-foreground">
                         <Send className="h-4 w-4 mr-2" />
@@ -764,7 +764,7 @@ export default function HomePage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="+998 90 123 45 67"
+                        placeholder="+998 99 016 76 47 "
                         className="bg-input border-border"
                         required
                       />
@@ -1328,7 +1328,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span>+998 90 123 45 67</span>
+                  <span>+998 99 016 76 47 </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Send className="h-4 w-4 text-primary flex-shrink-0" />
@@ -1400,7 +1400,7 @@ export default function HomePage() {
                   value={serviceFormData.phone}
                   onChange={(e) => setServiceFormData({ ...serviceFormData, phone: e.target.value })}
                   className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="+998 90 123 45 67"
+                  placeholder="+998 99 016 76 47 "
                 />
               </div>
 

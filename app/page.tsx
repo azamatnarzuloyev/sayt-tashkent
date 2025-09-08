@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 import {
   MapPin,
   Phone,
@@ -45,6 +46,8 @@ export default function HomePage() {
     message: "",
   })
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -107,6 +110,22 @@ export default function HomePage() {
       setIsSubmitting(false)
     }
   }
+  const projects = [
+  { id: 1, title: "E-commerce веб-сайт", category: "E-commerce", description: "Полнофункциональный интернет-магазин с каталогом товаров", image: "/portfolio/e-commerse-sts.webp", technologies: ["React", "Node.js", "MongoDB"], link: "http://stsmarket.uz/" },
+  { id: 2, title: "Корпоративный сайт", category: "Веб-сайт", description: "Представительский сайт для бизнеса", image: "/portfolio/UMX.webp", technologies: ["Next.js", "PostgreSQL", "TypeScript"], link: "https://www.uvix.uz/" },
+  { id: 3, title: "Админ панель", category: "Веб-сайт", description: "Административная панель для управления", image: "/portfolio/admin-sts-shop.webp", technologies: ["React", "Firebase"], link: "https://sts-shop.uz/admin/auth/login" },
+  { id: 4, title: "Система учета посещаемости", category: "Веб-сайт", description: "Система для учета сотрудников", image: "/portfolio/davomat.webp", technologies: ["Next.js", "MongoDB"], link: "https://www.davomad-tizim.uz/sign-in" },
+  { id: 5, title: "E-Bitim", category: "Мобильное приложение", description: "Мобильное приложение для сделок", image: "/portfolio/e-bitim.webp", technologies: ["React Native", "Stripe"], link: "https://www.ebitim.uz/" },
+  { id: 6, title: "Minor Tovur", category: "Мобильное приложение", description: "Приложение для продажи товаров", image: "/portfolio/minor-tovur.webp", technologies: ["React Native", "Firebase"], link: "#" },
+  { id: 7, title: "Система контроля", category: "Веб-сайт", description: "Система мониторинга процессов", image: "/portfolio/nazorat.webp", technologies: ["Next.js", "TypeScript"], link: "#" },
+  { id: 8, title: "Программа для склада", category: "Десктоп", description: "Десктопное приложение для управления складом", image: "/portfolio/sklad.webp", technologies: ["Electron", "Node.js"], link: "#" },
+  { id: 9, title: "E-commerce приложение", category: "Мобильное приложение", description: "Мобильный магазин для покупок", image: "/portfolio/stsmarket-mobil.webp", technologies: ["React Native", "MongoDB"], link: "https://apps.apple.com/uz/app/sts-market/id6702024082" },
+  { id: 10, title: "СургПатЛаб", category: "Веб-сайт", description: "Медицинский веб-сайт", image: "/portfolio/12.png", technologies: ["React", "PostgreSQL"], link: "https://www.surgpath.org" },
+  { id: 11, title: "Хумо Групп CRM", category: "Веб-сайт", description: "CRM система для бизнеса", image: "/portfolio/xumo-group.png", technologies: ["Next.js", "Firebase"], link: "https://humo-group.uz/" },
+  { id: 12, title: "Пикник Тур", category: "Веб-сайт", description: "Туристический веб-сайт", image: "/portfolio/picnic-tour.png", technologies: ["React", "Node.js"], link: "https://www.picnic-tour.uz/" },
+  { id: 13, title: "Ts service", category: "Веб-сайт", description: "Сервисный веб-сайт", image: "/portfolio/ts-service-sayt.png", technologies: ["Next.js", "TypeScript"], link: "https://ts-service.uz/" },
+];
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -120,7 +139,7 @@ export default function HomePage() {
         {/* Background with classical statue */}
         <div className="absolute inset-0" role="img" aria-label="Классическая статуя мыслителя - символ интеллектуального подхода к веб-разработке">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20"></div>
-          <div className="absolute inset-0 bg-[url('/classical-statue-thinking-pose-marble-sculpture.jpg')] bg-cover bg-center opacity-30"></div>
+          <div className="absolute inset-0 bg-[url('/Razrabotka-sayta.jpg')] bg-cover bg-center opacity-30"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-background/60"></div>
         </div>
 
@@ -159,7 +178,7 @@ export default function HomePage() {
 
             {/* Contact info - responsive */}
             <div className="hidden md:flex items-center space-x-2 lg:space-x-4 text-xs lg:text-sm">
-              <span className="hidden lg:inline text-muted-foreground">+998 90 123 45 67</span>
+              <span className="hidden lg:inline text-muted-foreground">+998 99 016 76 47 </span>
               <span className="text-muted-foreground lg:hidden">Звонить</span>
               <span className="hidden xl:inline text-muted-foreground">info@sayt-tashkent.uz</span>
             </div>
@@ -231,9 +250,9 @@ export default function HomePage() {
                   {/* Mobile contact info */}
                   <div className="pt-4 border-t border-border/50">
                     <div className="space-y-2">
-                      <a href="tel:+998901234567" className="flex items-center text-primary font-medium">
+                      <a href="tel:+998990167647 " className="flex items-center text-primary font-medium">
                         <Phone className="h-4 w-4 mr-2" />
-                        +998 90 123 45 67
+                        +998 99 016 76 47 
                       </a>
                       <a href="mailto:info@sayt-tashkent.uz" className="flex items-center text-muted-foreground">
                         <Send className="h-4 w-4 mr-2" />
@@ -257,7 +276,7 @@ export default function HomePage() {
             </h1>
 
             <div className="space-y-4 sm:space-y-6">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent">ВЕБ-СТУДИЯ SAYT-TASHKENT</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent">ВЕБ-СТУДИЯ САЙТ-ТАШКЕНТ</h2>
               <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto sm:mx-0 leading-relaxed">
                 Профессиональная разработка сайтов в Ташкенте под ключ. Создаем современные веб-сайты для бизнеса любого
                 масштаба. Веб-студия полного цикла с опытом более 10 лет и 500+ успешных проектов.
@@ -517,75 +536,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-card/30" id="portfolio" aria-labelledby="portfolio-title">
-        <div className="container mx-auto px-4">
-          <h2 id="portfolio-title" className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-            ПОРТФОЛИО НАШЕЙ ВЕБ-СТУДИИ
-          </h2>
-          <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-            Примеры успешно реализованных проектов по разработке сайтов в Ташкенте. Каждый проект создавался с учетом
-            специфики бизнеса клиента.
-          </p>
+     <section className="py-20 bg-card/30" id="portfolio" aria-labelledby="portfolio-title">
+      <div className="container mx-auto px-4">
+        <h2 id="portfolio-title" className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
+          ПОРТФОЛИО НАШЕЙ ВЕБ-СТУДИИ
+        </h2>
+        <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+          Примеры успешно реализованных проектов по разработке сайтов в Ташкенте. Каждый проект создавался с учетом
+          специфики бизнеса клиента.
+        </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Интернет-магазин электроники",
-                category: "E-commerce",
-                description: "Полнофункциональный интернет-магазин с каталогом товаров, корзиной и системой оплаты",
-                image: "/modern-electronics-ecommerce-website.jpg",
-                technologies: ["React", "Node.js", "MongoDB"],
-              },
-              {
-                title: "Корпоративный сайт банка",
-                category: "Корпоративный",
-                description: "Представительский сайт финансового учреждения с личными кабинетами клиентов",
-                image: "/professional-bank-corporate-website.jpg",
-                technologies: ["Next.js", "PostgreSQL", "TypeScript"],
-              },
-              {
-                title: "Приложение доставки еды",
-                category: "Мобильное приложение",
-                description: "Веб-приложение для заказа и доставки еды с геолокацией и онлайн-оплатой",
-                image: "/food-delivery-app.png",
-                technologies: ["React Native", "Firebase", "Stripe"],
-              },
-            ].map((project, index) => (
-              <Card
-                key={index}
-                className="overflow-hidden bg-card border-border/50 hover:border-primary/50 transition-all duration-300 group"
-              >
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 relative overflow-hidden">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-300"
-                    style={{ backgroundImage: `url('${project.image}')` }}
-                  ></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-                  <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">{project.category}</Badge>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <Card
+              key={project.id}
+              className="overflow-hidden bg-card border-border/50 hover:border-primary/50 transition-all duration-300 group"
+            >
+              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 relative overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">{project.category}</Badge>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold text-foreground mb-2">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech, techIndex) => (
+                    <Badge key={techIndex} variant="secondary" className="text-xs">
+                      {tech}
+                    </Badge>
+                  ))}
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="secondary" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-full border-primary text-primary hover:bg-primary/10 bg-transparent"
-                  >
-                    ПОСМОТРЕТЬ ПРОЕКТ
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full border-primary text-primary hover:bg-primary/10 bg-transparent"
+                  disabled={project.link === "#"}
+                  asChild={project.link !== "#"}
+                >
+                  {project.link !== "#" ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      ПОСМОТРЕТЬ ПРОЕКТ
+                    </a>
+                  ) : (
+                    "ПОСМОТРЕТЬ ПРОЕКТ"
+                  )}
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
 
       <section className="py-20" id="reviews">
         <div className="container mx-auto px-4">
@@ -764,7 +772,7 @@ export default function HomePage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="+998 90 123 45 67"
+                        placeholder="+998 99 016 76 47 "
                         className="bg-input border-border"
                         required
                       />
@@ -1328,7 +1336,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span>+998 90 123 45 67</span>
+                  <span>+998 99 016 76 47 </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Send className="h-4 w-4 text-primary flex-shrink-0" />
@@ -1400,7 +1408,7 @@ export default function HomePage() {
                   value={serviceFormData.phone}
                   onChange={(e) => setServiceFormData({ ...serviceFormData, phone: e.target.value })}
                   className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="+998 90 123 45 67"
+                  placeholder="+998 99 016 76 47 "
                 />
               </div>
 
