@@ -151,7 +151,7 @@ export default function HomePage() {
         <nav className="absolute top-0 left-0 right-0 z-20 p-4 sm:p-6">
           <div className="container mx-auto flex items-center justify-between">
             <div className="text-lg sm:text-2xl font-bold text-foreground">
-              <span className="text-primary">▲</span>sayt-tashkent
+              <span className="text-primary">▲</span>INNOSOFT
             </div>
             
             {/* Desktop Navigation */}
@@ -180,7 +180,7 @@ export default function HomePage() {
             <div className="hidden md:flex items-center space-x-2 lg:space-x-4 text-xs lg:text-sm">
               <span className="hidden lg:inline text-muted-foreground">+998 99 016 76 47 </span>
               <span className="text-muted-foreground lg:hidden">Звонить</span>
-              <span className="hidden xl:inline text-muted-foreground">info@sayt-tashkent.uz</span>
+              <span className="hidden xl:inline text-muted-foreground">info@inosoft.uz</span>
             </div>
 
             {/* Mobile menu button */}
@@ -254,9 +254,9 @@ export default function HomePage() {
                         <Phone className="h-4 w-4 mr-2" />
                         +998 99 016 76 47 
                       </a>
-                      <a href="mailto:info@sayt-tashkent.uz" className="flex items-center text-muted-foreground">
+                      <a href="mailto:info@innosoft" className="flex items-center text-muted-foreground">
                         <Send className="h-4 w-4 mr-2" />
-                        info@sayt-tashkent.uz
+                        info@innosoft
                       </a>
                     </div>
                   </div>
@@ -276,7 +276,7 @@ export default function HomePage() {
             </h1>
 
             <div className="space-y-4 sm:space-y-6">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent">ВЕБ-СТУДИЯ САЙТ-ТАШКЕНТ</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent">ВЕБ-СТУДИЯ INNOSOFT</h2>
               <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto sm:mx-0 leading-relaxed">
                 Профессиональная разработка сайтов в Ташкенте под ключ. Создаем современные веб-сайты для бизнеса любого
                 масштаба. Веб-студия полного цикла с опытом более 10 лет и 500+ успешных проектов.
@@ -1265,7 +1265,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <h3 className="text-xl font-bold text-card-foreground mb-4">
-                <span className="text-primary">▲</span>SAYT-TASHKENT.UZ
+                <span className="text-primary">▲</span>innosoft
               </h3>
               <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                 Профессиональная разработка сайтов и веб-студия в Ташкенте. Создаем современные IT-решения для успешного
@@ -1340,7 +1340,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Send className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span>info@sayt-tashkent.uz</span>
+                  <span>info@innosoft</span>
                 </div>
               </div>
             </div>
@@ -1360,7 +1360,7 @@ export default function HomePage() {
           <div className="border-t border-border mt-12 pt-8">
             <div className="grid md:grid-cols-2 gap-4 items-center">
               <div className="text-sm text-muted-foreground">
-                <p>&copy; 2024 SAYT-TASHKENT.UZ. Все права защищены.</p>
+                <p>&copy; 2024 innosoft. Все права защищены.</p>
                 <p className="mt-1">Разработка сайтов в Ташкенте | Веб-студия полного цикла</p>
               </div>
               <div className="text-sm text-muted-foreground md:text-right">

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Main sitemap
-Sitemap: https://sayt-tashkent.vercel.app/sitemap.xml
+Sitemap: https://tashkent.websaytxizmat.uz/sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1
@@ -39,4 +39,4 @@ User-agent: YandexBot
 Allow: /
 
 # Host directive for preferred domain
-Host: https://sayt-tashkent.vercel.app
+Host: https://tashkent.websaytxizmat.uz
