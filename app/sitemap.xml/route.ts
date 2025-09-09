@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 
 export async function GET() {
-  const baseUrl = 'https://sayt-tashkent.uz'
+  const baseUrl = 'https://sayt-tashkent.vercel.app'
   const currentDate = new Date().toISOString()
 
   const staticPages = [

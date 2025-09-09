@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sayt-tashkent.uz'),
+  metadataBase: new URL('https://sayt-tashkent.vercel.app'),
   title: {
     default: 'Разработка сайтов в Ташкенте | Веб-студия SAYT-TASHKENT - создание сайтов под ключ',
     template: '%s | SAYT-TASHKENT - разработка сайтов в Ташкенте'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     'CMS разработка',
     'веб дизайн Ташкент'
   ],
-  authors: [{ name: 'SAYT-TASHKENT', url: 'https://sayt-tashkent.uz' }],
+  authors: [{ name: 'SAYT-TASHKENT', url: 'https://sayt-tashkent.vercel.app' }],
   creator: 'Веб-студия SAYT-TASHKENT',
   publisher: 'SAYT-TASHKENT',
   category: 'technology',
@@ -44,23 +44,23 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://sayt-tashkent.uz',
+    canonical: 'https://sayt-tashkent.vercel.app',
     languages: {
-      'ru-UZ': 'https://sayt-tashkent.uz',
-      'uz-UZ': 'https://sayt-tashkent.uz/uz',
-      'en-US': 'https://sayt-tashkent.uz/en'
+      'ru-UZ': 'https://sayt-tashkent.vercel.app',
+      'uz-UZ': 'https://sayt-tashkent.vercel.app/uz',
+      'en-US': 'https://sayt-tashkent.vercel.app/en'
     }
   },
   openGraph: {
     type: 'website',
     locale: 'ru_UZ',
-    url: 'https://sayt-tashkent.uz',
+    url: 'https://sayt-tashkent.vercel.app',
     siteName: 'SAYT-TASHKENT - Разработка сайтов в Ташкенте',
     title: 'Разработка сайтов в Ташкенте | Веб-студия SAYT-TASHKENT',
     description: 'Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов. Веб-студия полного цикла с опытом 10+ лет.',
     images: [
       {
-        url: 'https://sayt-tashkent.uz/og-image.jpg',
+        url: 'https://sayt-tashkent.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Разработка сайтов в Ташкенте - Веб-студия SAYT-TASHKENT',
@@ -73,14 +73,14 @@ export const metadata: Metadata = {
     creator: '@sayt_tashkent',
     title: 'Разработка сайтов в Ташкенте | Веб-студия SAYT-TASHKENT',
     description: 'Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов.',
-    images: ['https://sayt-tashkent.uz/twitter-image.jpg'],
+    images: ['https://sayt-tashkent.vercel.app/twitter-image.jpg'],
   },
   verification: {
-    google: 'google-site-verification-code',
+    google: 'Z7lQKf7-37tURL2vGTEKxq0gIIvz9wktOlczSM8RnDw',
     yandex: 'yandex-verification-code',
-    other: {
-      'msvalidate.01': 'bing-verification-code',
-    }
+    // other: {
+    //   'msvalidate.01': 'bing-verification-code',
+    // } 
   },
   appleWebApp: {
     title: 'SAYT-TASHKENT',
@@ -98,13 +98,13 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://sayt-tashkent.uz/#organization",
+    "@id": "https://sayt-tashkent.vercel.app/#organization",
     "name": "SAYT-TASHKENT",
     "alternateName": "Веб-студия SAYT-TASHKENT",
     "description": "Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов.",
-    "url": "https://sayt-tashkent.uz",
-    "logo": "https://sayt-tashkent.uz/logo.png",
-    "image": "https://sayt-tashkent.uz/og-image.jpg",
+    "url": "https://sayt-tashkent.vercel.app",
+    "logo": "https://sayt-tashkent.vercel.app/logo.png",
+    "image": "https://sayt-tashkent.vercel.app/og-image.jpg",
     "telephone": "+998990167647 ",
     "email": "info@sayt-tashkent.uz",
     "address": {
@@ -213,7 +213,7 @@ export default function RootLayout({
             __html: JSON.stringify(structuredData),
           }}
         />
-        <link rel="canonical" href="https://sayt-tashkent.uz" />
+        <link rel="canonical" href="https://sayt-tashkent.vercel.app" />
         <meta name="geo.region" content="UZ-TK" />
         <meta name="geo.placename" content="Ташкент" />
         <meta name="geo.position" content="41.2995;69.2401" />
