@@ -267,52 +267,85 @@ export default function HomePage() {
         </nav>
 
         {/* Main content - Mobile Optimized */}
-        <header className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-4 text-center sm:text-left max-w-4xl mt-16 sm:mt-0">
-          <div className="space-y-6 sm:space-y-8">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-tight sm:leading-tight">
-              <span className="block text-balance">РАЗРАБОТКА</span>
-              <span className="block text-balance">САЙТОВ В</span>
-              <span className="block text-balance text-primary">ТАШКЕНТЕ</span>
-            </h1>
+       <header className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-4 text-center sm:text-left max-w-4xl mt-16 sm:mt-0">
+  <div className="space-y-6 sm:space-y-8">
+    <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-tight sm:leading-tight">
+      <span className="block text-balance">РАЗРАБОТКА</span>
+      <span className="block text-balance">САЙТОВ В</span>
+      <span className="block text-balance text-primary">ТАШКЕНТЕ</span>
+    </h1>
 
-            <div className="space-y-4 sm:space-y-6">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent">ВЕБ-СТУДИЯ INNOSOFT</h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto sm:mx-0 leading-relaxed">
-                Профессиональная разработка сайтов в Ташкенте под ключ. Создаем современные веб-сайты для бизнеса любого
-                масштаба. Веб-студия полного цикла с опытом более 10 лет и 500+ успешных проектов.
-              </p>
-              <div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-4">
-                <Badge variant="secondary" className="bg-primary text-primary-foreground border-primary text-xs sm:text-sm">
-                  Разработка сайтов Ташкент
-                </Badge>
-                <Badge variant="secondary" className="bg-accent text-accent-foreground border-accent text-xs sm:text-sm">
-                  Веб-студия под ключ
-                </Badge>
-                <Badge variant="secondary" className="bg-secondary text-secondary-foreground border-secondary text-xs sm:text-sm">
-                  Создание сайтов
-                </Badge>
-              </div>
-            </div>
+    <div className="space-y-4 sm:space-y-6">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent">
+        <a
+          href="https://innosoft.uz/ru/razrabotka-sayt-tashkent"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline hover:text-primary transition-colors duration-200"
+        >
+          ВЕБ-СТУДИЯ INNOSOFT
+        </a>
+      </h2>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto sm:mx-0">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg border-2 border-primary w-full sm:w-auto"
-              >
-                <FileText className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                БРИФ ОНЛАЙН
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg border-2 border-accent text-accent hover:bg-accent/10 bg-transparent w-full sm:w-auto"
-              >
-                <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                СКАЧАТЬ БРИФ
-              </Button>
-            </div>
-          </div>
-        </header>
+      <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto sm:mx-0 leading-relaxed">
+        Профессиональная разработка сайтов в Ташкенте под ключ. Создаем современные веб-сайты для бизнеса любого
+        масштаба. Веб-студия полного цикла с опытом более 10 лет и 500+ успешных проектов.
+      </p>
+
+      <div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-4">
+        <Badge variant="secondary" className="bg-primary text-primary-foreground border-primary text-xs sm:text-sm">
+          <a
+            href="https://innosoft.uz/ru/razrabotka-sayt-tashkent"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Разработка сайтов Ташкент
+          </a>
+        </Badge>
+        <Badge variant="secondary" className="bg-accent text-accent-foreground border-accent text-xs sm:text-sm">
+          <a
+            href="https://innosoft.uz/ru/razrabotka-sayt-tashkent"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Веб-студия под ключ
+          </a>
+        </Badge>
+        <Badge variant="secondary" className="bg-secondary text-secondary-foreground border-secondary text-xs sm:text-sm">
+          <a
+            href="https://innosoft.uz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Создание сайтов
+          </a>
+        </Badge>
+      </div>
+    </div>
+
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto sm:mx-0">
+      <Button
+        size="lg"
+        className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg border-2 border-primary w-full sm:w-auto"
+      >
+        <FileText className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+        БРИФ ОНЛАЙН
+      </Button>
+      <Button
+        variant="outline"
+        size="lg"
+        className="px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg border-2 border-accent text-accent hover:bg-accent/10 bg-transparent w-full sm:w-auto"
+      >
+        <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+        СКАЧАТЬ БРИФ
+      </Button>
+    </div>
+  </div>
+</header>
+
       </section>
 
       <section className="py-20 bg-card/30" id="advantages" aria-labelledby="advantages-title">

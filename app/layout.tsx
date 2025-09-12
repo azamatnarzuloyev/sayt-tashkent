@@ -7,8 +7,8 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://tashkent.websaytxizmat.uz'),
   title: {
-    default: 'Разработка сайтов в Ташкенте | Веб-студия SAYT-TASHKENT - создание сайтов под ключ',
-    template: '%s | SAYT-TASHKENT - разработка сайтов в Ташкенте'
+    default: 'Разработка сайтов в Ташкенте | Веб-студия Innosoft - создание сайтов под ключ',
+    template: '%s | Innosoft - разработка сайтов в Ташкенте'
   },
   description: 'Профессиональная разработка сайтов в Ташкенте под ключ ⭐ Создание корпоративных сайтов, интернет-магазинов, лендингов ⭐ Веб-студия полного цикла ⭐ 500+ успешных проектов ⭐ Опыт 10+ лет ⭐ SEO-оптимизация включена',
   keywords: [
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     'CMS разработка',
     'веб дизайн Ташкент'
   ],
-  authors: [{ name: 'SAYT-TASHKENT', url: 'https://tashkent.websaytxizmat.uz' }],
-  creator: 'Веб-студия SAYT-TASHKENT',
-  publisher: 'SAYT-TASHKENT',
+  authors: [{ name: 'Innosoft', url: 'https://tashkent.websaytxizmat.uz' }],
+  creator: 'Веб-студия Innosoft',
+  publisher: 'Веб-студия Innosoft',
   category: 'technology',
   classification: 'Web Development Services',
   robots: {
@@ -55,15 +55,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ru_UZ',
     url: 'https://tashkent.websaytxizmat.uz',
-    siteName: 'SAYT-TASHKENT - Разработка сайтов в Ташкенте',
-    title: 'Разработка сайтов в Ташкенте | Веб-студия SAYT-TASHKENT',
+    siteName: 'innosoft - Разработка сайтов в Ташкенте',
+    title: 'Разработка сайтов в Ташкенте | Веб-студия Innosoft',
     description: 'Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов. Веб-студия полного цикла с опытом 10+ лет.',
     images: [
       {
         url: 'https://tashkent.websaytxizmat.uz/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Разработка сайтов в Ташкенте - Веб-студия SAYT-TASHKENT',
+        alt: 'Разработка сайтов в Ташкенте - Веб-студия Innosoft',
       }
     ],
   },
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@saytt_tashkent',
     creator: '@sayt_tashkent',
-    title: 'Разработка сайтов в Ташкенте | Веб-студия SAYT-TASHKENT',
+    title: 'Разработка сайтов в Ташкенте | Веб-студия Innosoft',
     description: 'Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов.',
     images: ['https://tashkent.websaytxizmat.uz/twitter-image.jpg'],
   },
@@ -100,7 +100,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     "@id": "https://tashkent.websaytxizmat.uz/#organization",
     "name": "SAYT-TASHKENT",
-    "alternateName": "Веб-студия SAYT-TASHKENT",
+    "alternateName": "Веб-студия Innosoft",
     "description": "Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов.",
     "url": "https://tashkent.websaytxizmat.uz",
     "logo": "https://tashkent.websaytxizmat.uz/logo.png",
