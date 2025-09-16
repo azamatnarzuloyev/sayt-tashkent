@@ -294,34 +294,18 @@ export default function HomePage() {
 
       <div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-4">
         <Badge variant="secondary" className="bg-primary text-primary-foreground border-primary text-xs sm:text-sm">
-          <a
-            href="https://innosoft.uz/ru/razrabotka-sayt-tashkent"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
+       
             Разработка сайтов Ташкент
-          </a>
         </Badge>
         <Badge variant="secondary" className="bg-accent text-accent-foreground border-accent text-xs sm:text-sm">
-          <a
-            href="https://innosoft.uz/ru/razrabotka-sayt-tashkent"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
+       
             Веб-студия под ключ
-          </a>
+         
         </Badge>
         <Badge variant="secondary" className="bg-secondary text-secondary-foreground border-secondary text-xs sm:text-sm">
-          <a
-            href="https://innosoft.uz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
+          
             Создание сайтов
-          </a>
+          
         </Badge>
       </div>
     </div>
@@ -1088,7 +1072,7 @@ export default function HomePage() {
                       <strong>Цена:</strong> веб-сайт показывает один из самых выгодных условий разработки
                     </p>
                     <p>
-                      <strong>Стоимость:</strong> работ по созданию корпоративного сайта начинается от 50000 рублей
+                      <strong>Стоимость:</strong> работ по созданию корпоративного сайта начинается от 50000 
                     </p>
                     <p>
                       <strong>По времени:</strong> разработка займет около 14-45 рабочих дней
@@ -1201,7 +1185,7 @@ export default function HomePage() {
                       типу визитка.
                     </p>
                     <p>
-                      <strong>Стоимость работ:</strong> по созданию сайта визитки составляет от 1500 рублей.
+                      <strong>Стоимость работ:</strong> по созданию сайта визитки составляет от 1500 000.
                     </p>
                     <p>
                       <strong>По времени:</strong> разработка займет от 7 рабочих дней.
