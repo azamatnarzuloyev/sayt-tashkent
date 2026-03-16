@@ -110,7 +110,7 @@ export default function Footer() {
               <p className="mt-1">Разработка сайтов в Ташкенте | Веб-студия полного цикла</p>
             </div>
             <div className="text-sm text-muted-foreground md:text-right">
-              <p>Веб-студия NexWeb</p>
+              <p>Разработано в <a href="https://innosoft.uz" target="_blank" rel="noopener" className="text-primary hover:underline transition-colors">Innosoft</a></p>
               <p className="mt-1">г. Ташкент, Узбекистан</p>
             </div>
           </div>

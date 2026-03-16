@@ -1398,8 +1398,8 @@ export default function HomePage() {
                 <p className="mt-1">Разработка сайтов в Ташкенте | Веб-студия полного цикла</p>
               </div>
               <div className="text-sm text-muted-foreground md:text-right">
-                <p>Лицензия на разработку ПО №123456</p>
-                <p className="mt-1">ИНН: 123456789 | ОКЭД: 62010</p>
+                <p>Разработано в <a href="https://innosoft.uz" target="_blank" rel="noopener" className="text-primary hover:underline transition-colors">Innosoft</a></p>
+                <p className="mt-1">г. Ташкент, Узбекистан</p>
               </div>
             </div>
           </div>
