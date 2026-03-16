@@ -181,7 +181,7 @@ export default function HomePage() {
             <div className="hidden md:flex items-center space-x-2 lg:space-x-4 text-xs lg:text-sm">
               <span className="hidden lg:inline text-muted-foreground">+998 99 016 76 47 </span>
               <span className="text-muted-foreground lg:hidden">Звонить</span>
-              <span className="hidden xl:inline text-muted-foreground">info@inosoft.uz</span>
+              <span className="hidden xl:inline text-muted-foreground">info@nexweb.uz</span>
             </div>
 
             {/* Mobile menu button */}
