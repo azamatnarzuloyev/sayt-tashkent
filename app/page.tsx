@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
+import Link from "next/link"
 import {
   MapPin,
   Phone,
@@ -151,7 +152,7 @@ export default function HomePage() {
         <nav className="absolute top-0 left-0 right-0 z-20 p-4 sm:p-6">
           <div className="container mx-auto flex items-center justify-between">
             <div className="text-lg sm:text-2xl font-bold text-foreground">
-              <span className="text-primary">▲</span>INNOSOFT
+              <span className="text-primary">▲</span>NEXWEB
             </div>
             
             {/* Desktop Navigation */}
@@ -254,9 +255,9 @@ export default function HomePage() {
                         <Phone className="h-4 w-4 mr-2" />
                         +998 99 016 76 47 
                       </a>
-                      <a href="mailto:info@innosoft" className="flex items-center text-muted-foreground">
+                      <a href="mailto:info@nexweb.uz" className="flex items-center text-muted-foreground">
                         <Send className="h-4 w-4 mr-2" />
-                        info@innosoft
+                        info@nexweb.uz
                       </a>
                     </div>
                   </div>
@@ -278,12 +279,12 @@ export default function HomePage() {
     <div className="space-y-4 sm:space-y-6">
       <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-accent">
         <a
-          href="https://innosoft.uz/ru/razrabotka-sayt-tashkent"
+          href="https://nexweb.uz"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline hover:text-primary transition-colors duration-200"
         >
-          ВЕБ-СТУДИЯ INNOSOFT
+          ВЕБ-СТУДИЯ NEXWEB
         </a>
       </h2>
 
@@ -459,6 +460,7 @@ export default function HomePage() {
                 price: "от 500 000 сум",
                 features: ["Адаптивный дизайн", "SEO-оптимизация", "Форма обратной связи", "Интеграция с соцсетями"],
                 popular: false,
+                slug: "",
               },
               {
                 title: "LANDING PAGE",
@@ -467,6 +469,7 @@ export default function HomePage() {
                 price: "от 800 000 сум",
                 features: ["Продающий дизайн", "A/B тестирование", "Аналитика", "Интеграция с CRM"],
                 popular: true,
+                slug: "/uslugi/landing-page-pod-klyuch",
               },
               {
                 title: "КОРПОРАТИВНЫЙ САЙТ",
@@ -475,6 +478,7 @@ export default function HomePage() {
                 price: "от 2 500 000 сум",
                 features: ["Многоязычность", "Личный кабинет", "Новостная лента", "Интеграция с 1С"],
                 popular: false,
+                slug: "/uslugi/korporativnye-sayty",
               },
               {
                 title: "ИНТЕРНЕТ-МАГАЗИН",
@@ -483,6 +487,7 @@ export default function HomePage() {
                 price: "от 2 000 000 сум",
                 features: ["Каталог товаров", "Корзина и оплата", "Личный кабинет", "Система скидок"],
                 popular: false,
+                slug: "/uslugi/sozdanie-internet-magazinov",
               },
               {
                 title: "САЙТ УСЛУГ",
@@ -491,6 +496,7 @@ export default function HomePage() {
                 price: "от 1 200 000 сум",
                 features: ["Каталог услуг", "Онлайн-запись", "Калькулятор стоимости", "Отзывы клиентов"],
                 popular: false,
+                slug: "",
               },
               {
                 title: "ВЕБ-ПОРТАЛ",
@@ -498,6 +504,7 @@ export default function HomePage() {
                 price: "от 5 000 000 сум",
                 features: ["Модульная архитектура", "API интеграции", "Высокие нагрузки", "Масштабируемость"],
                 popular: false,
+                slug: "",
               },
             ].map((service, index) => (
               <Card
@@ -539,12 +546,22 @@ export default function HomePage() {
                     >
                       ЗАКАЗАТЬ САЙТ
                     </Button>
-                    <Button
-                      variant="outline"
-                      className="w-full border-accent text-accent hover:bg-accent/10 bg-transparent"
-                    >
-                      УЗНАТЬ ПОДРОБНЕЕ
-                    </Button>
+                    {service.slug ? (
+                      <Button
+                        variant="outline"
+                        className="w-full border-accent text-accent hover:bg-accent/10 bg-transparent"
+                        asChild
+                      >
+                        <Link href={service.slug}>УЗНАТЬ ПОДРОБНЕЕ</Link>
+                      </Button>
+                    ) : (
+                      <Button
+                        variant="outline"
+                        className="w-full border-accent text-accent hover:bg-accent/10 bg-transparent"
+                      >
+                        УЗНАТЬ ПОДРОБНЕЕ
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -1282,7 +1299,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <h3 className="text-xl font-bold text-card-foreground mb-4">
-                <span className="text-primary">▲</span>innosoft
+                <span className="text-primary">▲</span>NexWeb
               </h3>
               <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                 Профессиональная разработка сайтов и веб-студия в Ташкенте. Создаем современные IT-решения для успешного
@@ -1314,29 +1331,29 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-primary transition-colors">
+                  <Link href="/uslugi/sozdanie-internet-magazinov" className="hover:text-primary transition-colors">
                     Создание интернет-магазинов
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-primary transition-colors">
+                  <Link href="/uslugi/korporativnye-sayty" className="hover:text-primary transition-colors">
                     Корпоративные сайты
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-primary transition-colors">
+                  <Link href="/uslugi/landing-page-pod-klyuch" className="hover:text-primary transition-colors">
                     Landing Page под ключ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-primary transition-colors">
+                  <Link href="/uslugi/seo-prodvizhenie-saytov" className="hover:text-primary transition-colors">
                     SEO продвижение сайтов
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-primary transition-colors">
+                  <Link href="/uslugi/tehpodderzhka-saytov" className="hover:text-primary transition-colors">
                     Техподдержка сайтов
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -1357,7 +1374,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Send className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span>info@innosoft</span>
+                  <span>info@nexweb.uz</span>
                 </div>
               </div>
             </div>
@@ -1377,7 +1394,7 @@ export default function HomePage() {
           <div className="border-t border-border mt-12 pt-8">
             <div className="grid md:grid-cols-2 gap-4 items-center">
               <div className="text-sm text-muted-foreground">
-                <p>&copy; 2024 innosoft. Все права защищены.</p>
+                <p>&copy; {new Date().getFullYear()} NexWeb. Все права защищены.</p>
                 <p className="mt-1">Разработка сайтов в Ташкенте | Веб-студия полного цикла</p>
               </div>
               <div className="text-sm text-muted-foreground md:text-right">

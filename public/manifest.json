@@ -1,6 +1,6 @@
 {
-  "name": "SAYT-TASHKENT - Разработка сайтов в Ташкенте",
-  "short_name": "SAYT-TASHKENT",
+  "name": "NexWeb - Разработка сайтов в Ташкенте",
+  "short_name": "NexWeb",
   "description": "Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов.",
   "start_url": "/",
   "display": "standalone",
@@ -18,14 +18,14 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512x512.png", 
+      "src": "/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
       "src": "/apple-touch-icon.png",
-      "sizes": "180x180", 
+      "sizes": "180x180",
       "type": "image/png"
     }
   ],
@@ -35,40 +35,24 @@
       "short_name": "Услуги",
       "description": "Наши услуги по разработке сайтов",
       "url": "/#services",
-      "icons": [
-        {
-          "src": "/icon-192x192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
     },
     {
       "name": "Портфолио",
-      "short_name": "Портфолио", 
+      "short_name": "Портфолио",
       "description": "Примеры наших работ",
       "url": "/#portfolio",
-      "icons": [
-        {
-          "src": "/icon-192x192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
     },
     {
       "name": "Контакты",
       "short_name": "Контакты",
       "description": "Свяжитесь с нами",
       "url": "/#contact",
-      "icons": [
-        {
-          "src": "/icon-192x192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
     }
   ],
   "related_applications": [],
   "prefer_related_applications": false,
-  "scope": "/",
-  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7"
+  "scope": "/"
 }

@@ -5,10 +5,10 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://tashkent.websaytxizmat.uz'),
+  metadataBase: new URL('https://nexweb.uz'),
   title: {
-    default: 'Разработка сайтов в Ташкенте | Веб-студия Ташкент - создание сайтов под ключ',
-    template: '%s | Ташкент - разработка сайтов в Ташкенте'
+    default: 'Разработка сайтов в Ташкенте | Веб-студия NexWeb - создание сайтов под ключ',
+    template: '%s | NexWeb - разработка сайтов в Ташкенте'
   },
   description: 'Профессиональная разработка сайтов в Ташкенте под ключ ⭐ Создание корпоративных сайтов, интернет-магазинов, лендингов ⭐ Веб-студия полного цикла ⭐ 500+ успешных проектов ⭐ Опыт 10+ лет ⭐ SEO-оптимизация включена',
   keywords: [
@@ -25,11 +25,13 @@ export const metadata: Metadata = {
     'техподдержка сайтов',
     'адаптивный дизайн',
     'CMS разработка',
-    'веб дизайн Ташкент'
+    'веб дизайн Ташкент',
+    'NexWeb',
+    'nexweb.uz'
   ],
-  authors: [{ name: 'Innosoft', url: 'https://tashkent.websaytxizmat.uz' }],
-  creator: 'Веб-студия Innosoft',
-  publisher: 'Веб-студия Innosoft',
+  authors: [{ name: 'NexWeb', url: 'https://nexweb.uz' }],
+  creator: 'Веб-студия NexWeb',
+  publisher: 'Веб-студия NexWeb',
   category: 'technology',
   classification: 'Web Development Services',
   robots: {
@@ -44,46 +46,41 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://tashkent.websaytxizmat.uz',
+    canonical: 'https://nexweb.uz',
     languages: {
-      'ru-UZ': 'https://tashkent.websaytxizmat.uz',
-      // 'uz-UZ': 'https://tashkent.websaytxizmat.uz/uz',
-      // 'en-US': 'https://tashkent.websaytxizmat.uz/en'
+      'ru-UZ': 'https://nexweb.uz',
     }
   },
   openGraph: {
     type: 'website',
     locale: 'ru_UZ',
-    url: 'https://tashkent.websaytxizmat.uz',
-    siteName: 'innosoft - Разработка сайтов в Ташкенте',
-    title: 'Разработка сайтов в Ташкенте | Веб-студия Innosoft',
+    url: 'https://nexweb.uz',
+    siteName: 'NexWeb - Разработка сайтов в Ташкенте',
+    title: 'Разработка сайтов в Ташкенте | Веб-студия NexWeb',
     description: 'Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов. Веб-студия полного цикла с опытом 10+ лет.',
     images: [
       {
-        url: 'https://tashkent.websaytxizmat.uz/og-image.jpg',
+        url: 'https://nexweb.uz/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Разработка сайтов в Ташкенте - Веб-студия Innosoft',
+        alt: 'Разработка сайтов в Ташкенте - Веб-студия NexWeb',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@saytt_tashkent',
-    creator: '@sayt_tashkent',
-    title: 'Разработка сайтов в Ташкенте | Веб-студия Innosoft',
+    site: '@nexweb_uz',
+    creator: '@nexweb_uz',
+    title: 'Разработка сайтов в Ташкенте | Веб-студия NexWeb',
     description: 'Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов.',
-    images: ['https://tashkent.websaytxizmat.uz/twitter-image.jpg'],
+    images: ['https://nexweb.uz/twitter-image.jpg'],
   },
   verification: {
-    google: 'Z7lQKf7-37tURL2vGTEKxq0gIIvz9wktOlczSM8RnDw',
+    google: 'lCt2RQHJQEjdy81nbgjSFJquM61BEEJ0Q-1_dsm0Zl4',
     yandex: 'yandex-verification-code',
-    // other: {
-    //   'msvalidate.01': 'bing-verification-code',
-    // } 
   },
   appleWebApp: {
-    title: 'SAYT-TASHKENT',
+    title: 'NexWeb',
     statusBarStyle: 'default',
     capable: true,
   },
@@ -98,15 +95,15 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://tashkent.websaytxizmat.uz/#organization",
-    "name": "SAYT-TASHKENT",
-    "alternateName": "Веб-студия Innosoft",
+    "@id": "https://nexweb.uz/#organization",
+    "name": "NexWeb",
+    "alternateName": "Веб-студия NexWeb",
     "description": "Профессиональная разработка сайтов в Ташкенте под ключ. Создание корпоративных сайтов, интернет-магазинов, лендингов.",
-    "url": "https://tashkent.websaytxizmat.uz",
-    "logo": "https://tashkent.websaytxizmat.uz/logo.png",
-    "image": "https://tashkent.websaytxizmat.uz/og-image.jpg",
-    "telephone": "+998990167647 ",
-    "email": "info@innosoft.uz",
+    "url": "https://nexweb.uz",
+    "logo": "https://nexweb.uz/logo.png",
+    "image": "https://nexweb.uz/og-image.jpg",
+    "telephone": "+998990167647",
+    "email": "info@nexweb.uz",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "ул. Амира Темура, 107Б",
@@ -198,9 +195,8 @@ export default function RootLayout({
     "numberOfEmployees": "10-50",
     "slogan": "Создаем сайты, которые работают на ваш бизнес",
     "sameAs": [
-      "https://t.me/sayt_tashkent",
-      "https://instagram.com/sayt.tashkent",
-      "https://facebook.com/sayTtashkent"
+      "https://t.me/nexweb_uz",
+      "https://instagram.com/nexweb.uz"
     ]
   };
 
@@ -213,7 +209,7 @@ export default function RootLayout({
             __html: JSON.stringify(structuredData),
           }}
         />
-        <link rel="canonical" href="https://tashkent.websaytxizmat.uz" />
+        <link rel="canonical" href="https://nexweb.uz" />
         <meta name="geo.region" content="UZ-TK" />
         <meta name="geo.placename" content="Ташкент" />
         <meta name="geo.position" content="41.2995;69.2401" />

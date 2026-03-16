@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
 
 const TELEGRAM_BOT_TOKEN = "7785729507:AAFoohIH3fKhat80-amStmoLvYO9KNd27Z4"
-const TELEGRAM_CHAT_ID = "@innosoft_2"
+const TELEGRAM_CHAT_ID = "@nexweb_uz"
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     if (type === "service") {
       // Service order format
       telegramMessage = `
-🎯 ЗАКАЗ УСЛУГИ С САЙТА sayt-tashkent.uz
+🎯 ЗАКАЗ УСЛУГИ С САЙТА nexweb.uz
 
 🔥 Услуга: ${service}
 👤 Имя: ${name}
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     } else {
       // Regular order format
       telegramMessage = `
-🔥 НОВЫЙ ЗАКАЗ С САЙТА sayt-tashkent.uz
+🔥 НОВЫЙ ЗАКАЗ С САЙТА nexweb.uz
 
 👤 Имя: ${name}
 📞 Телефон: ${phone}

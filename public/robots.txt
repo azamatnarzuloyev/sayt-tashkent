@@ -1,24 +1,17 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
 # Main sitemap
-Sitemap: https://tashkent.websaytxizmat.uz/sitemap.xml
+Sitemap: https://nexweb.uz/sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1
 
-# Block sensitive areas (if any in future)
-# Disallow: /admin/
-# Disallow: /api/
-
 # Allow important pages for SEO
 Allow: /
-Allow: /services/
-Allow: /portfolio/
-Allow: /contact/
-Allow: /about/
+Allow: /uslugi/
 
-# SEO optimization
 # Allow all search engines to index the site
 User-agent: Googlebot
 Allow: /
@@ -26,17 +19,11 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Slurp
+User-agent: YandexBot
 Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
 
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
 # Host directive for preferred domain
-Host: https://tashkent.websaytxizmat.uz
+Host: https://nexweb.uz
